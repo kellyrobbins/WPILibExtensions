@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WPILibExtensions: Main Page</title>
+<title>WPILibExtensions: Commands/PrintStallData.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,10 +37,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -59,7 +59,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,15 +79,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b56bc70d6f175f70aa8be9ffda7ded2c.html">Commands</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">WPILibExtensions Documentation</div>  </div>
+<div class="title">PrintStallData.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<a href="_print_stall_data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PRINT_STALL_DATA_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PRINT_STALL_DATA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;WPILib.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Commands/Subsystem.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Stallable.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="class_print_stall_data.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_print_stall_data.html">PrintStallData</a> : <span class="keyword">public</span> Command{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                <a class="code" href="class_print_stall_data.html#ab3bf77533a0a32ae6a76efd9bda983ec">PrintStallData</a>(<a class="code" href="class_stallable.html">Stallable</a>* stallable);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_print_stall_data.html#a4a6b32ab11027ebd713ed70b14209ea0">Initialize</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_print_stall_data.html#a307398515726c6ce64f0687365897b49">   10</a></span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_print_stall_data.html#a307398515726c6ce64f0687365897b49">Execute</a>(){}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_print_stall_data.html#adb0f20c18546ebc87d449530c0c1a271">IsFinished</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_print_stall_data.html#ac4d79883916e1a40170d600135f4ac08">   12</a></span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_print_stall_data.html#ac4d79883916e1a40170d600135f4ac08">End</a>(){}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_print_stall_data.html#a5991a965f2f587fd2dc4f87afc05dcc4">   13</a></span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_print_stall_data.html#a5991a965f2f587fd2dc4f87afc05dcc4">Interrupted</a>(){}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <a class="code" href="class_stallable.html">Stallable</a>* stallable;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2013 01:52:50 for WPILibExtensions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 24 2013 01:52:49 for WPILibExtensions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
